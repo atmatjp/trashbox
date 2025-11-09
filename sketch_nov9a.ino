@@ -32,7 +32,7 @@ void loop() {
   Serial.print(distance);
   Serial.println(" cmです");
   
-  if (distance <= 20 && distance > 0) {
+  if (distance <= 10 && distance > 0) {
     myServo.write(90);
   } else {
     myServo.write(0);
